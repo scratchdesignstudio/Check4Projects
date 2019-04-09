@@ -81,6 +81,11 @@
   		border-radius: 15px;
 		}
 		</style>
+		<script>
+		function showdata() {
+		   document.getElementById('data').style.display = "block";
+		}
+		</script>
 	<head>
 	<body style="margin:0">
 		<div class="main">
@@ -88,10 +93,10 @@
 			<h2>Search For A Username</h2>
 			<form>
 				<input type="text" name="username" placeholder="Username">
-				<input type="submit" value="Search">
+				<input type="submit" value="Search" onclick="showdata()">
 			</form>
 		</div>
-		<div class="slide-in-bottom">
+		<div class="slide-in-bottom" style="display:none;" id="data">
 			<div class="output">
 			   test
 			</div>
